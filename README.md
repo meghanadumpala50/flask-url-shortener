@@ -1,28 +1,36 @@
 # Flask URL-Shortener
 
-[Live Demo](https://glowsquid.com/url/) (on a not-so-short URL)
+A simple web application to shorten long URLs into shorter, shareable links.
 
 ## Features
 
-- Shortens URLs to a default 3-digit prefix using a random character and letter combination.
-- Checks if the shortened URL already exists and attempt to re-run the code-generator until it finds an available combination.
-- All data is stored in a single MySQL table.
-- Case-sensitive. The database distinguishes between upper- and lower-case characters.
-- A Stats page lists all the shortened URLs, and shows how many times a target link has been redirected.
-- There is a button to automatically copy the shortened URL to clipboard.
-- Has an option to use Recaptcha to prevent spambots.
+- Generate short URLs for long links
+- Support custom aliases
+- Redirect shortened links to original URLs
+- Store URLs in SQLite database
+- Track number of clicks on each shortened URL
 
 ![Screenshot](https://github.com/GlowSquid/Flask-URL-Shortener/blob/master/screenshot.gif)
 
-## Setup
+## Tech Stack
 
-- Create a virtualenv
-- Install the requirements `pip install -r requirements.txt`
-- Update settings.py with your own MySQL credentials
-- Create the database in MySQL `CREATE DATABASE shortener;`
-- Run `python create_db.py` to setup the table
-- Lastly, alter the MySQL table to allow case-sensitive characters:
+- Python
+- Flask
+- SQLAlchemy
+- SQLite
+- HTML/CSS
 
-`ALTER TABLE url CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;`
+## How to Run
+1. Clone the repository
+2. Create a virtual environment
+3. Install dependencies:
+   pip install -r requirements.txt
+4. Run:
+   python main.py
 
-Run the app with `python main.py`
+## Example
+Original:
+https://youtube.com
+
+Shortened:
+http://localhost:5001/yt1
