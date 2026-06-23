@@ -13,13 +13,13 @@ A simple web application to shorten long URLs into shorter, shareable links.
 ## Screenshots
 
 ### Home Page
-![Home](static/screenshots/home.png)
+![Home](static/home.png)
 
 ### Success Page
-![Success](static/screenshots/success.png)
+![Success](static/success.png)
 
 ### Stats Page
-![Stats](static/screenshots/stats.png)
+![Stats](static/stats.png)
 
 ## Tech Stack
 
