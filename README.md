@@ -10,7 +10,16 @@ A simple web application to shorten long URLs into shorter, shareable links.
 - Store URLs in SQLite database
 - Track number of clicks on each shortened URL
 
-![Screenshot](https://github.com/GlowSquid/Flask-URL-Shortener/blob/master/screenshot.gif)
+## Screenshots
+
+### Home Page
+![Home](static/screenshots/home.png)
+
+### Success Page
+![Success](static/screenshots/success.png)
+
+### Stats Page
+![Stats](static/screenshots/stats.png)
 
 ## Tech Stack
 
