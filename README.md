@@ -13,14 +13,13 @@ A simple web application to shorten long URLs into shorter, shareable links.
 ## Screenshots
 
 ### Home Page
-![Home](url/static/home.png)
+![Home](static/home.png)
 
 ### Success Page
-![Success](url/static/success.png)
+![Success](static/success.png)
 
 ### Stats Page
-![Stats](url/static/stats.png)
-
+![Stats](static/stats.png)
 ## Tech Stack
 
 - Python
