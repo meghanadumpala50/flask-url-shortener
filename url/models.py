@@ -8,6 +8,7 @@ class Url(db.Model):
     new = db.Column(db.String(5), unique=True)
     hits = db.Column(db.Integer, default=0)
     created = db.Column(db.DateTime, default=datetime.datetime.now)
+    clicks = db.Column(db.Integer, default=0)
 
     def __init__(self, *args, **kwargs):
         super(Url, self).__init__(*args, **kwargs)
